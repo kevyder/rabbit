@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+if Category.count.zero?
+  Category.create([
+                    { name: 'Moving Helping' },
+                    { name: 'Handy man' },
+                    { name: 'Cleaning' },
+                    { name: 'Shopping and Delivering' },
+                    { name: 'Parties and Events' }
+                  ])
+end
